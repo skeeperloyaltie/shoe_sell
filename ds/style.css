@@ -1,0 +1,291 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav {
+	font-family: 'Courier New', monospace;
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: grey;
+}
+
+nav ul {
+	background-color: grey;
+}
+
+nav ul li {
+	font-family: 'Courier New', monospace;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 0 15px;
+}
+
+nav ul li a {
+	color: white;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+#toggler {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 20px;
+	display: none;
+}
+
+#toggler span {
+	font-family: 'Courier New', monospace;
+}
+
+#navigation {
+	position: relative;
+	display: inline-flex;
+	margin-right: 10px;
+}
+
+#search-form {
+	display: inline-flex;
+	width: 150%;
+	transform: scale(0, 0);
+}
+
+#search-bar {
+	width: 70%;
+	color: #000;
+	font-size: 12px;
+}
+
+#searchButton {
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	border: none;
+	outline: none;
+	background-color: #414141;
+}
+
+#opener {
+	width: 100%;
+	display: flex;
+	color: #fff;
+	font-size: 25px;
+}
+
+#closer {
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 25px;
+	background-color: black;
+	display: none;
+}
+
+#open-close:checked~#search-form {
+	transform: scale(1, 1);
+}
+
+#open-close:checked~#opener {
+	display: none;
+}
+
+#open-close:checked~#closer {
+	display: flex;
+}
+
+ul {
+	font-family: 'Courier New', monospace;
+	font-size: 20px;
+	list-style-type: none;
+	margin: 0;
+	padding: 14px 140px;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+
+.second-ul {
+	font-family: 'Courier New', monospace;
+	font-size: 16px;
+	list-style-type: square;
+	margin: 0;
+	padding: 0px 20px;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+
+li {
+	float: left;
+}
+
+.second-li {
+	float: none;
+	padding-left: 1.2em;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 0;
+	font-size: 20px;
+}
+
+li a:hover:not(.active) {
+	background-color: #111;
+}
+
+.active {
+	background-color: white;
+	color: black;
+}
+
+img {
+	width: 30%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	font-family: Garamond, serif;
+	padding: 20px;
+	margin-left: 40px;
+	color: #808080;
+}
+
+h2 {
+	font-family: 'Courier New', monospace;
+	font-size: 20px;
+	margin-right: 20px;
+	color: white;
+}
+
+p {
+	font-family: 'Courier New', monospace;
+	color: black;
+}
+
+h3 {
+	font-family: 'Courier New', monospace;
+	color: black;
+	padding: 0px 0px;
+	font-size: 20px;
+	text-align: center;
+}
+
+h4 {
+	font-family: 'Courier New', monospace;
+	color: black;
+	font-size: 16px;
+	font-weight: lighter;
+	text-align: center;
+	margin: 0 auto;
+	width: 70%;
+}
+
+.ship {
+	float: none;
+	padding: 6px 10px;
+	margin-top: 0;
+	margin-right: 0;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+}
+
+.cartbutton {
+	float: none;
+	padding: 6px 10px;
+	margin-top: 0;
+	margin-right: 0;
+	background: black;
+	font-size: 16px;
+	font-family: 'Courier New', monospace;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+.selectbutton {
+	float: none;
+	background: grey;
+	font-size: 16px;
+	font-family: 'Courier New', monospace;
+	color: white;
+	display: block;
+	margin-left: auto;
+	width: 200px;
+	display: inline-block;
+}
+
+.selections {
+	text-align: center;
+}
+
+.viewcartbutton {
+	float: none;
+	padding: 6px 10px;
+	margin-top: 0;
+	margin-right: 0;
+	background: rgb(88, 88, 88);
+	font-size: 16px;
+	font-family: 'Courier New', monospace;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+table {
+	font-family: 'Courier New', monospace;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+.border {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+.similar {
+	width: 60%;
+}
+
+.similarshoe {
+	text-align: center;
+}
+
+@media (max-width:786px) {
+	#toggler {
+		display: flex;
+	}
+	nav ul {
+		position: absolute;
+		top: 70px;
+		left: -100%;
+		width: 100%;
+		text-align: center;
+		transition: 0.8s ease-in-out;
+	}
+	nav ul li {
+		display: block;
+		padding: 20px 0px;
+	}
+	#responsive-nav:checked~ul {
+		left: 0;
+	}
+}
