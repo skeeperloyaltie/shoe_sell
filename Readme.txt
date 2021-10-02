@@ -1,8 +1,4 @@
-Author: Yogesh singh
-Author URL: https://makitweb.com/
-Author Email: makitweb@gmail.com
-Tutorial Link: https://makitweb.com/login-page-with-jquery-and-ajax/
-
+Author: Skeeper Loyaltie
 Instructions -
 
 1. Import the attached users.sql file in your database.
